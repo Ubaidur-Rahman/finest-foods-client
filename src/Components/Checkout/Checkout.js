@@ -8,7 +8,7 @@ const Checkout = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [products , setProducts] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5055/products')
+        fetch('https://stark-fortress-17749.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
@@ -20,7 +20,7 @@ const Checkout = () => {
         const newOrder = {...loggedInUser, ...product, orderTime };
         delete newOrder._id
 
-        fetch(`http://localhost:5055/addOrder`, { 
+        fetch(`https://stark-fortress-17749.herokuapp.com/addOrder`, { 
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(newOrder)

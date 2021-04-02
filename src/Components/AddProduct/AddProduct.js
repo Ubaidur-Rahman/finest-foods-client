@@ -14,7 +14,7 @@ const AddProduct = () => {
             weight: data.weight,
             imageURL: imageURL
         };
-        const url = 'http://localhost:5055/addProduct'
+        const url = 'https://stark-fortress-17749.herokuapp.com/addProduct'
 
         console.log(productData)
         fetch(url, {
