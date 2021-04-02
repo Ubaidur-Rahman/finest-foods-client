@@ -10,7 +10,7 @@ const ShowManageProducts = (props) => {
             <tr>
                 <td>{name}</td>
                 <td>{weight}</td>
-                <td>{price}</td>
+                <td>${price}</td>
                 <td>
                     <button>Delete</button>
                     <button>edit</button>

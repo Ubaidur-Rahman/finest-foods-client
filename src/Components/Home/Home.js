@@ -11,11 +11,11 @@ const Home = () => {
     },[])
 
     return (
-        <div className="container">
-            <div className="justify-content-center">
-            <form class="d-flex w-50">
-                <input class="form-control" type="search" placeholder="Search Food" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
+        <div className="container text-center">
+            <div className="text-center">
+            <form className="d-flex w-50 ">
+                <input className="form-control" type="search" placeholder="Search Food" aria-label="Search" />
+                <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
             </div>
             <div className="container">

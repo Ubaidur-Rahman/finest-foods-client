@@ -1,0 +1,15 @@
+.product-img{
+    border: 0 solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 3px 1px 10px rgb(169, 162, 180);
+    padding: 10px;
+    
+}
+.single-product{
+    border: 1px solid rgb(73, 65, 145);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 3px 1px 15px rgb(7, 4, 12);
+}

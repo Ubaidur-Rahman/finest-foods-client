@@ -65,12 +65,11 @@ function App() {
           </div>
         </Route>
         <Route path="/add-product">
-          <div className="d-flex">
+        <div className="d-flex">
             <div className="w-25">
               <Admin />
             </div>
-            <AddProduct />
-          </div>
+            <AddProduct /></div>
         </Route>
 
         <Route path="/edit-product">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Product.css";
 
 const Product = ({ product }) => {
 
@@ -8,10 +9,10 @@ const Product = ({ product }) => {
 
     return (
 
-        <div className="col col-md-4 mt-3">
+        <div className="single-product col col-md-6 col-lg-4 my-3 p-3">
 
 
-            <img style={{ height: '300px' }} src={imageURL} alt={`img of ${name}`} />
+            <img className="product-img" style={{ height: '200px' }} src={imageURL} alt={`img of ${name}`} />
 
 
             <h5>
@@ -19,12 +20,12 @@ const Product = ({ product }) => {
             </h5>
 
 
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex justify-content-around align-items-center">
                 <div>
                     <h2>${price}</h2>
                 </div>
                 <div>
-                    <button className="btn btn-success"><Link to={`/checkout/${_id}`}>Buy Now</Link></button>
+                    <button className="btn btn-danger"><Link className="link-item-style" to={`/checkout/${_id}`}>Buy Now</Link></button>
                 </div>
             </div>
         </div>
