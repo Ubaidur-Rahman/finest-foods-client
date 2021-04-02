@@ -5,7 +5,7 @@ import { UserContext } from '../../App';
 const Admin = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     return (
-            <div className=" container text-primary">
+            <div className=" container bg-info text-primary">
                 <ul style={{ listStyleType: "none", padding: "10px"}}>
                     <li>
                         <h3 className="mb-5"><Link className="link-item-style" to="/">Finest Foods</Link></h3>
